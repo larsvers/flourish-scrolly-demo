@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Scrolly test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- We only need the embed script once (and if we're using embeds): -->
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <!-- Add the Flourish Scrolly library -->
+    <script src="https://cdn.flourish.rocks/flourish-scrolly-v3.1.0.min.js"></script>
+
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <!-- This is a wrapper around the scrolly in case you want to apply extra styling (see Step 6 in the help doc) -->
+    <div id="my-wrapper-1" class="wrapper">
+      <!--  Drop your choice of Flourish embed code - you can use either the script or iframe embed codes here -->
+      <div
+        class="flourish-embed"
+        data-src="story/1664174?932"
+        data-url="https://flo.uri.sh/story/1664174/embed"
+        data-height="100vh"
+      ></div>
+
+      <!-- Here is where you add your captions, linking them to specific slides in the story -->
+      <p>Text for slide 1<a href="#story/1664174/slide-1"></a></p>
+      <p>Text for slide 2<a href="#story/1664174/slide-2"></a></p>
+    </div>
+    <div id="placeholder">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde
+      qui ab odio, obcaecati culpa earum saepe nulla, dolorum sed vitae placeat
+      est natus alias nesciunt aliquam nostrum omnis at. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Optio temporibus perspiciatis
+      consectetur nulla fugit doloribus ratione voluptas accusantium qui. Illum
+      architecto odit, nulla doloribus placeat magni consequatur cumque
+      exercitationem hic. Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Temporibus unde qui ab odio, obcaecati culpa earum saepe nulla,
+      dolorum sed vitae placeat est natus alias nesciunt aliquam nostrum omnis
+      at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+      temporibus perspiciatis consectetur nulla fugit doloribus ratione voluptas
+      accusantium qui.
+    </div>
+
+    <div id="my-wrapper-2" class="wrapper">
+      <!--  Drop your choice of Flourish embed code - you can use either the script or iframe embed codes here -->
+      <!-- So, either an embed with `data-height="100vh"` ... -->
+      <!-- <div
+        class="flourish-embed"
+        data-src="story/1066454"
+        data-url="https://flo.uri.sh/story/1066454/embed"
+        data-height="100vh"
+        ></div> -->
+
+      <!-- ...or an iframe with width and height settings. -->
+      <iframe
+        src="https://flo.uri.sh/story/1066454/embed"
+        title="Interactive or visual content"
+        class="flourish-embed-iframe"
+        frameborder="0"
+        scrolling="no"
+        style="width: 100%; height: 100vh"
+        sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+      ></iframe>
+
+      <!-- Here is where you add your captions, linking them to specific slides in the story -->
+      <p>Text for slide 1<a href="#story/1066454/slide-1"></a></p>
+      <p>Text for slide 2<a href="#story/1066454/slide-2"></a></p>
+      <p>Text for slide 3<a href="#story/1066454/slide-3"></a></p>
+      <p>Text for slide 4<a href="#story/1066454/slide-4"></a></p>
+      <p>Text for slide 5<a href="#story/1066454/slide-5"></a></p>
+    </div>
+
+    <!-- Add the Flourish Scrolly library -->
+    <!-- <script
+      src="https://cdn.flourish.rocks/flourish-scrolly-v3.1.0.min.js"
+      type="text/javascript"
+    ></script> -->
+
+    <!-- Initialize the library to turn your story into scrolly magic! -->
+    <script type="text/javascript">
+      initFlourishScrolly();
+    </script>
+  </body>
+</html>
